@@ -77,6 +77,7 @@
         background-color: rgb(18, 163, 189);
         color: black;
         padding-left: 3px;
+        justify-content: space-between;
     }
 
     &__description{
@@ -112,7 +113,16 @@
         }
     }   
 } 
-
+.ico-font{
+    width: 60px;
+    margin-right: 6px;
+    background-color: white;
+    height: 100%;
+}
+.category{
+    font-style: oblique;
+    margin: 0;
+}
 @media (max-width: 576px){
     .card{
         flex-direction: column;
