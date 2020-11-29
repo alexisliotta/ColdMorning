@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+}
+
+.Dad{
+  margin: 0;
+  width: 100%;
+  height: 110%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.h4:hover{
+  cursor: pointer;
+  margin-left: 10px;
+  background-color: rgba(72, 185, 189, 0.397);
+  border-bottom: 1px solid rgb(2, 95, 107);
+}
+.logo{
+  width: 160px;
+}
+
+.Background{
+  width: 100%;
+  height: 150%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 6.2%;
+  background-image: url('../../assets/top.png');
+  z-index: -10;
+  position: fixed;
+  top: 0;
+
+}
+.container-top{
+  width: 100%;
+  height: 15%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-mid{
+  width: 100%;
+  height: 54%;
+  margin: 0;
+  background-image: url('../../assets/fondoserch.png');
+  background-size: 100%;
+  display: flex;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container-bottom{
+  width: 100%;
+  height: 90%;
+  background-image: url('../../assets/bottom.png');
+}
+.loading{
+  position: relative;
+  margin-top: 30%;
+  width: 70px;
+}
+
+.principal__title{
+  font-size: 500%;
+  color: white;
+  margin-top: 100px;
+  margin-bottom: 50px;
+
+}
+
+@media (max-width: 800px) {
+  .principal__title{
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+    color: white;
+    margin-top: 100px;
+    margin-bottom: 40px;
+  
+  }
+  
+ }
