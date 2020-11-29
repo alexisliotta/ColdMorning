@@ -15,7 +15,7 @@ const News = (props) => {
   const diaActual = `${fecha.getFullYear()}/${fecha.getMonth() + 1}/${fecha.getDate()}`;
 
   useEffect(() => {
-    fetch(`http://newsapi.org/v2/everything?q=bitcoin&from=${diaActual}&sortBy=publishedAt&apiKey=5411b819dfc74d898e3f8e65d7654f05
+    fetch(`https://newsapi.org/v2/everything?q=bitcoin&from=${diaActual}&sortBy=publishedAt&apiKey=5411b819dfc74d898e3f8e65d7654f05
     `)
       .then(res => res.json())
       .then((data) => {
