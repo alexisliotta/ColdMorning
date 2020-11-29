@@ -24,7 +24,9 @@ const News = (props) => {
 
   return (
     <div className="Dad">
-       <Navbar />
+      <Navbar
+       valor = {true}
+      />
        {props.news.articles && props.news.articles.map((article) => {
             return (
               <div className='card'>

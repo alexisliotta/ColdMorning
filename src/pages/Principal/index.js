@@ -41,7 +41,9 @@ function App(props) {
 
   return (
     <div className="Dad">
-      <Navbar onSubmit={inputSerchfunction} />
+      <Navbar
+      valor ={false}
+      onSubmit={inputSerchfunction} />
       {props.countrySerching
         ? <Fragment>
           <h3 className='principal__title'>Weather in your locality</h3>

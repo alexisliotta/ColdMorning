@@ -11,7 +11,9 @@ function AboutUs(props) {
 
   return (
     <div className="Dad">
-      <Navbar  />     
+      <Navbar       
+      valor = {true}
+      />     
       <div className='Background'>
         <div className='container-top'>
             <div className='about-us-title'>                

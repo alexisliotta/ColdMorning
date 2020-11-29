@@ -13,7 +13,7 @@ const Navbar = (props) => {
         <Link to={'/news'}><h4 className='nav__div__h4'>New´s </h4></Link>
         <Link to={'/AboutUs'}><h4 className='nav__div__h4'>About us </h4></Link>  
         <form onSubmit={props.onSubmit}>
-          <input className='nav__div__input' id='inputSerching' placeholder='Serch Country..' />
+          <input disabled={props.valor} className='nav__div__input' id='inputSerching' placeholder='Serch Country..' />
         </form>
       </div>
     </div>
