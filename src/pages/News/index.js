@@ -43,7 +43,7 @@ const News = (props) => {
                   <img className='ico-font' src={article.provider.logo}/>
                   </div>
                   <div className='card__description'>
-                    {article.description.substring(0,416) }
+                    {article.description}
                     <a className='card__link' target='_blank' href={article.sourceUrl}>See More</a>
                   </div>
                 </div>
