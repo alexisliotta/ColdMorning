@@ -1,7 +1,7 @@
 import {SAVE_USERSTART} from '../action/userStartAction';
 
 const state_default ={
-    infouser: {}
+    infouser: ''
 }
 
 export default (state = state_default, action)=>{

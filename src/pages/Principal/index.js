@@ -17,7 +17,7 @@ function App(props) {
   const inputSerchfunction = (e) => {
     e.preventDefault();
     const inputSerchTarget = e.target.inputSerching.value;
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${inputSerchTarget}&appid=920da1c9bfa1dbff0b3739a6b82ef80d`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${inputSerchTarget}&appid=920da1c9bfa1dbff0b3739a6b82ef80d`)
       .then((res) => res.json())
       .then((data) => {
         props.SaveCountry(data);
@@ -26,12 +26,12 @@ function App(props) {
   }
   //INFORMACION DEL USUARIO:
   useEffect(() => {
-    fetch(`http://ip-api.com/json`)
+    fetch(`https://ipapi.co/city`)
       .then(resIp => resIp.json())
       .then((dataIP) => {
         props.saveUserInf(dataIP);
 
-        return fetch(`http://api.openweathermap.org/data/2.5/weather?q=${dataIP.city}&appid=920da1c9bfa1dbff0b3739a6b82ef80d`);
+        return fetch(`https://api.openweathermap.org/data/2.5/weather?q=${dataIP}&appid=920da1c9bfa1dbff0b3739a6b82ef80d`);
       })
       .then(resWeather => resWeather.json())
       .then((dataWeather) => {
