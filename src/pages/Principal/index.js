@@ -27,7 +27,7 @@ function App(props) {
   //INFORMACION DEL USUARIO:
   useEffect(() => {
     fetch(`https://ipapi.co/city`)
-      .then(resIp => resIp.json())
+      .then(resIp => resIp.text())
       .then((dataIP) => {
         props.saveUserInf(dataIP);
 
@@ -38,7 +38,6 @@ function App(props) {
         props.SaveCountry(dataWeather);
       });
   }, [])
-
 
   return (
     <div className="Dad">
